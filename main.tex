@@ -1,0 +1,342 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Mathematics Formula List}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Sets}
+
+\begin{equation}
+n(P \cup Q) = n(P) + n(Q) – n(P \cap Q)
+\end{equation}
+
+\begin{equation}
+n(P \cup Q \cup R) = n(P) + n(Q) + n(R) - n(P \cap Q) - n(Q \cap R) - n(R \cap P) + n(P \cap Q \cap R)
+\end{equation}
+
+\begin{equation}
+(A \cup B)^{'} = A^{'} \cap B^{'}
+\end{equation}
+
+\begin{equation}
+(A \cap B)^{'} = A^{'} \cup B^{'}
+\end{equation}
+
+\textbf{Example of Cartesian Product:}
+
+Let
+
+\[
+A = \{a, b\}
+\]
+
+\[
+B = \{1, 2\}
+\]
+
+\[
+C = \{x, y\}
+\]
+
+Then
+
+\[
+A \times B \times C = \{(a, 1, x), (a, 1, y), (a, 2, x), (a, 2, y), (b, 1, x), (b, 1, y), (b, 2, x), (b, 2, y)\}
+\]
+
+\section{Trigonometry}
+
+\subsection{Sum and Difference Formulas}
+
+\begin{align}
+\sin(x+y) &= \sin(x)\cos(y) + \cos(x)\sin(y) \\
+\cos(x+y) &= \cos(x)\cos(y) - \sin(x)\sin(y) \\
+\tan(x+y) &= \frac{\tan(x)+\tan(y)}{1-\tan(x)\tan(y)} \\
+\sin(x-y) &= \sin(x)\cos(y) - \cos(x)\sin(y) \\
+\cos(x-y) &= \cos(x)\cos(y) + \sin(x)\sin(y) \\
+\tan(x-y) &= \frac{\tan(x)-\tan(y)}{1+\tan(x)\tan(y)}
+\end{align}
+
+\subsection{Double Angle Formulas}
+
+\begin{align}
+\sin(2x) &= 2\sin(x)\cos(x) = \frac{2\tan(x)}{1+\tan^2(x)} \\
+\cos(2x) &= \cos^2(x) - \sin^2(x) = \frac{1-\tan^2(x)}{1+\tan^2(x)} \\
+\cos(2x) &= 2\cos^2(x) - 1 = 1 - 2\sin^2(x) \\
+\tan(2x) &= \frac{2\tan(x)}{1-\tan^2(x)} \\
+\sec(2x) &= \frac{\sec^2(x)}{2-\sec^2(x)} \\
+\csc(2x) &= \frac{\sec(x)\csc(x)}{2}
+\end{align}
+
+\subsection{Triple Angle Formulas}
+
+\begin{align}
+\tan(3x) &= \frac{3\tan(x)-\tan^3(x)}{1-3\tan^2(x)} \\
+\sin(3x) &= 3\sin(x)-4\sin^3(x) \\
+\cos(3x) &= 4\cos^3(x)-3\cos(x)
+\end{align}
+
+\subsection{Product-to-Sum and Sum-to-Product Formulas}
+
+\begin{align}
+\sin(x)\cos(y) &= \frac{\sin(x+y) + \sin(x-y)}{2} \\
+\cos(x)\cos(y) &= \frac{\cos(x+y) + \cos(x-y)}{2} \\
+\sin(x)\sin(y) &= \frac{\cos(x-y) - \cos(x+y)}{2} \\
+\sin(x)+\sin(y) &= 2\sin\left(\frac{x+y}{2}\right)\cos\left(\frac{x-y}{2}\right) \\
+\sin(x)-\sin(y) &= 2\cos\left(\frac{x+y}{2}\right)\sin\left(\frac{x-y}{2}\right) \\
+\cos(x)+\cos(y) &= 2\cos\left(\frac{x+y}{2}\right)\cos\left(\frac{x-y}{2}\right) \\
+\cos(x)-\cos(y) &= -2\sin\left(\frac{x+y}{2}\right)\sin\left(\frac{x-y}{2}\right)
+\end{align}
+
+
+\section{Logarithms}
+
+\begin{equation}
+y = a^x \iff x = \log_a(y) \quad \text{where } x > 0, a > 0, \text{ and } a \neq 1
+\end{equation}
+
+\begin{equation}
+\log_a(1) = 0
+\end{equation}
+
+\begin{equation}
+\log_a(a) = 1
+\end{equation}
+
+\begin{equation}
+\log_a(x) + \log_a(y) = \log_a(xy)
+\end{equation}
+
+\begin{equation}
+\log_a(x) - \log_a(y) = \log_a\left(\frac{x}{y}\right)
+\end{equation}
+
+\begin{equation}
+n \log_a(x) = \log_a(x^n)
+\end{equation}
+
+\begin{equation}
+\log_a^n(x) = \frac{1}{n} \log_a(x)
+\end{equation}
+
+\begin{equation}
+(a^n)^y = x \Rightarrow y = \frac{1}{n} \log_a(x)
+\end{equation}
+
+\begin{equation}
+\log_{10}(x) = \log(x)
+\end{equation}
+
+\begin{equation}
+\log_{e}(x) = \ln(x) \quad \text{where } e \approx 2.71 \text{ (Euler's number, an irrational constant)}
+\end{equation}
+
+\begin{equation}
+\log_a(b) = \frac{1}{\log_b(a)}
+\end{equation}
+
+\begin{equation}
+\log_a(b) = \frac{\log_c(b)}{\log_c(a)} = \frac{\log(b)}{\log(a)} = \frac{\ln(b)}{\ln(a)}
+\end{equation}
+
+\textbf{Some common log values:}
+
+\begin{align*}
+\log(2) &= 0.3010 \\
+\log(3) &= 0.4771
+\end{align*}
+
+\section{Differentiation}
+
+\begin{equation}
+\frac{d(c)}{dx} = 0 \quad \text{where } c \text{ is a constant}
+\end{equation}
+
+\begin{equation}
+\frac{d(x^n)}{dx} = nx^{n-1}
+\end{equation}
+
+\begin{equation}
+\frac{d(e^x)}{dx} = e^x
+\end{equation}
+
+\begin{equation}
+\frac{d(a^x)}{dx} = a^x \ln(a) \quad \text{for example, } \frac{d(2^x)}{dx} = 2^x \ln(2)
+\end{equation}
+
+\begin{equation}
+\frac{d(\ln(x))}{dx} = \frac{1}{x} \quad \text{remember, } \frac{d(\log(x))}{dx} = \frac{1}{x} \text{ only if base is } 'e'
+\end{equation}
+
+\begin{equation}
+\frac{d(\sin(x))}{dx} = \cos(x)
+\end{equation}
+
+\begin{equation}
+\frac{d(\cos(x))}{dx} = -\sin(x)
+\end{equation}
+
+\begin{equation}
+\frac{d(\tan(x))}{dx} = \sec^2(x)
+\end{equation}
+
+\begin{equation}
+\frac{d(\sec(x))}{dx} = \sec(x)\tan(x)
+\end{equation}
+
+\begin{equation}
+\frac{d(\cot(x))}{dx} = -\csc^2(x)
+\end{equation}
+
+\begin{equation}
+\frac{d(\csc(x))}{dx} = -\csc(x)\cot(x)
+\end{equation}
+
+\textbf{Product Rule:}
+
+\begin{equation}
+\frac{d[f_1 \cdot f_2 \cdot f_3]}{dx} = \frac{df_1}{dx} \cdot f_2 \cdot f_3 + \frac{df_2}{dx} \cdot f_1 \cdot f_3 + \frac{df_3}{dx} \cdot f_1 \cdot f_2
+\end{equation}
+
+\textbf{Quotient Rule:}
+
+\begin{equation}
+\frac{d\left[\frac{f_1}{f_2}\right]}{dx} = \frac{f_2 \cdot \frac{df_1}{dx} - f_1 \cdot \frac{df_2}{dx}}{(f_2)^2}
+\end{equation}
+
+\section{Limits}
+
+\textbf{Indeterminate forms:} $0/0$, $\infty/\infty$, $\infty - \infty$, $\infty \times 0$, $\infty^0$, $0^0$, $1^\infty$
+
+\textbf{Note:} "Infinity" is an indeterminate form, but it's not a defined number.
+
+\textbf{Resolving limits using LHL and RHL:}
+
+Step 1: Directly substitute the point of limit in $f(x)$. If the result is determinate, that is the value of the limit. If it's indeterminate, proceed with the next steps.
+
+Step 2: Factorize and solve separately for the left-hand limit (LHL) and the right-hand limit (RHL).
+
+\textbf{L'Hopital's rule:} If $f(a)/g(a)$ has the indeterminate form $0/0$ or $\infty/\infty$, then $\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$.
+
+\textbf{Note:} If the limit is in the form of $\infty - \infty$, we should combine the terms in some way and then apply L'Hopital's rule.
+
+\textbf{Method of rationalization:} This method is often used to solve limits that involve square roots. By multiplying by the conjugate over itself, we can simplify the expression and find the limit.
+
+\textbf{Trigonometric limits:}
+
+\begin{equation}
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1
+\end{equation}
+
+\begin{equation}
+\lim_{x \to 0} \frac{\cos(x) - 1}{x} = 0
+\end{equation}
+
+\begin{equation}
+\lim_{x \to 0} \frac{\tan(x)}{x} = 1
+\end{equation}
+
+\begin{equation}
+\lim_{x \to a} \frac{\sin[f(x)]}{f(x)} = 1 \quad \text{if } f(a) = 0
+\end{equation}
+
+\begin{equation}
+\lim_{x \to a} \frac{\tan[f(x)]}{f(x)} = 1 \quad \text{if } f(a) = 0
+\end{equation}
+
+Examples:
+
+\begin{equation}
+\lim_{x \to 0} \frac{\sin(x^2)}{x} = \lim_{x \to 0} x \cdot \frac{\sin(x^2)}{x^2} = \lim_{x \to 0} x \cdot 1 = 0
+\end{equation}
+
+\begin{equation}
+\lim_{x \to 0} \frac{\sin(x-1)}{x-1} = \sin(1)
+\end{equation}
+\textbf{Note:} sin(x-1)/(x-1) is not indeterminate, so we don't turn it to 1 and instead simply substitute the limit in.
+
+\section{Integration}
+
+\begin{equation}
+\int dx = x + c
+\end{equation}
+
+\begin{equation}
+\int x^n dx = \frac{x^{n+1}}{n+1} + c, \quad n \neq -1
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{x} dx = \ln|x| + c
+\end{equation}
+
+\begin{equation}
+\int e^x dx = e^x + c
+\end{equation}
+
+\begin{equation}
+\int a^x dx = \frac{a^x}{\ln a} + c
+\end{equation}
+
+\begin{equation}
+\int \sin x dx = -\cos x + c
+\end{equation}
+
+\begin{equation}
+\int \cos x dx = \sin x + c
+\end{equation}
+
+\begin{equation}
+\int \sec^2 x dx = \tan x + c
+\end{equation}
+
+\begin{equation}
+\int \csc^2 x dx = -\cot x + c
+\end{equation}
+
+\begin{equation}
+\int \sec x \tan x dx = \sec x + c
+\end{equation}
+
+\begin{equation}
+\int \csc x \cot x dx = -\csc x + c
+\end{equation}
+
+\begin{equation}
+\int \tan x dx = \ln |\sec x| + c
+\end{equation}
+
+\begin{equation}
+\int \cot x dx = \ln |\sin x| + c
+\end{equation}
+
+\begin{equation}
+\int \sec x dx = \ln |\sec x + \tan x| + c
+\end{equation}
+
+\begin{equation}
+\int \csc x dx = -\ln |\csc x + \cot x| + c
+\end{equation}
+
+\begin{equation}
+\int \frac{dx}{\sqrt{1-x^2}} = \sin^{-1} x + c
+\end{equation}
+
+\begin{equation}
+\int \frac{dx}{1+x^2} = \tan^{-1} x + c
+\end{equation}
+
+\begin{equation}
+\int \frac{dx}{\sqrt{1+x^2}} = -\cos^{-1} x + c
+\end{equation}
+
+\begin{equation}
+\int e^x dx = e^x + c
+\end{equation}
+
+\end{document}
