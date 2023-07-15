@@ -10,6 +10,20 @@
 
 \maketitle
 
+\section{General Mathematical Rules}
+
+\subsection{Arithmetic Mean and Geometric Mean}
+
+Arithmetic Mean is always greater than or equal to Geometric Mean. For example, for three numbers \(a_1\), \(a_2\), and \(a_3\):
+
+\begin{equation}
+\text{Arithmetic Mean} = \frac{a_1 + a_2 + a_3}{3}
+\end{equation}
+
+\begin{equation}
+\text{Geometric Mean} = \sqrt[3]{a_1 \cdot a_2 \cdot a_3}
+\end{equation}
+
 \section{Sets}
 
 \begin{equation}
@@ -94,6 +108,52 @@ A \times B \times C = \{(a, 1, x), (a, 1, y), (a, 2, x), (a, 2, y), (b, 1, x), (
 \cos(x)-\cos(y) &= -2\sin\left(\frac{x+y}{2}\right)\sin\left(\frac{x-y}{2}\right)
 \end{align}
 
+\subsection{Power Reduction Formulas}
+
+\begin{equation}
+\cos^4 \theta + \sin^4 \theta = 1 - 2\sin^2 \theta \cos^2 \theta
+\end{equation}
+
+\begin{equation}
+\sin^6 \theta + \cos^6 \theta = 1 - 3\sin^2\theta \cos^2 \theta
+\end{equation}
+
+\subsection{Cotangent Formulas in Terms of Angle Sum}
+
+If \(A + B + C = 180^{\circ}\), we have:
+
+\begin{equation}
+\cot (A + B) = \cot (\pi - C)
+\end{equation}
+
+\begin{equation}
+\frac{\cot A \cot B - 1}{\cot A + \cot B} = -\cot C
+\end{equation}
+
+\subsection{Formulas Expressing Products of Trigonometric Functions in Sum/Difference of Angles}
+
+\begin{align}
+2\sin A\cos B &= \sin(A+B) + \sin(A-B) \\
+2\cos A\sin B &= \sin(A+B) - \sin(A-B) \\
+2\cos A\cos B &= \cos(A+B) + \cos(A-B) \\
+2\sin A\sin B &= \cos(A-B) - \cos(A+B)
+\end{align}
+
+\subsection{Formulas Involving Multiple of an Angle}
+
+\begin{align}
+4\sin(60-\theta) \cdot \sin(\theta) \cdot \sin(60+\theta) &= \sin(3\theta) \\
+4\cos(60-\theta) \cdot \cos(\theta) \cdot \cos(60+\theta) &= \cos(3\theta) \\
+\tan(60-\theta) \cdot \tan(\theta) \cdot \tan(60+\theta) &= \tan(3\theta)
+\end{align}
+
+\subsubsection{Note}
+
+Whenever the sum of squares of two numbers is 1, and one of them is assumed to be \(\sin(\theta)\), then the other is \(\cos(\theta)\). Also,
+
+\[
+-\sqrt{a^2+b^2} \leq a\sin x + b\cos x \leq \sqrt{a^2+b^2}
+\]
 
 \section{Logarithms}
 
@@ -268,7 +328,7 @@ Examples:
 \end{equation}
 
 \begin{equation}
-\int x^n dx = \frac{x^{n+1}}{n+1} + c, \quad n \neq -1
+\int ax^n dx = \frac{a x^{n+1}}{n+1} + c, \quad n \neq -1
 \end{equation}
 
 \begin{equation}
@@ -276,11 +336,15 @@ Examples:
 \end{equation}
 
 \begin{equation}
-\int e^x dx = e^x + c
+\int e^{mx} dx = \frac{e^{mx}}{m} + c
 \end{equation}
 
 \begin{equation}
-\int a^x dx = \frac{a^x}{\ln a} + c
+\int a^{mx} dx = \frac{a^{mx}}{m \ln a} + c
+\end{equation}
+
+\begin{equation}
+\int e^{\ln x} dx = x + c
 \end{equation}
 
 \begin{equation}
@@ -337,6 +401,44 @@ Examples:
 
 \begin{equation}
 \int e^x dx = e^x + c
+\end{equation}
+
+\section{Straight Lines}
+
+\subsection{Section Formulas}
+
+\textbf{Internal Section Formula:}
+
+The coordinates of the point \(P\) which divides the line segment joining \(A(x_1, y_1)\) and \(B(x_2, y_2)\) internally in the ratio \(m:n\) are given by
+
+\begin{equation}
+P = \left(\frac{m x_2 + n x_1}{m + n}, \frac{m y_2 + n y_1}{m + n}\right)
+\end{equation}
+
+\textbf{External Section Formula:}
+
+The coordinates of the point \(P\) which divides the line segment joining \(A(x_1, y_1)\) and \(B(x_2, y_2)\) externally in the ratio \(m:n\) are given by
+
+\begin{equation}
+P = \left(\frac{m x_2 - n x_1}{m - n}, \frac{m y_2 - n y_1}{m - n}\right)
+\end{equation}
+
+\subsection{Area Formulas}
+
+\textbf{Area of a Triangle:}
+
+The area of a triangle with vertices \(A(x_1, y_1)\), \(B(x_2, y_2)\), and \(C(x_3, y_3)\) is given by
+
+\begin{equation}
+\text{Area} = \frac{1}{2} [x_1(y_2 - y_3) + x_2 (y_3 - y_1) + x_3 (y_1 - y_2)]
+\end{equation}
+
+\textbf{Area of a Quadrilateral:}
+
+The area of a quadrilateral with vertices \(A(x_1, y_1)\), \(B(x_2, y_2)\), \(C(x_3, y_3)\), and \(D(x_4, y_4)\) in order is given by
+
+\begin{equation}
+\text{Area} = \frac{1}{2} [x_1y_2 - x_2y_1 + x_2y_3 - x_3y_2 + x_3y_4 - x_4y_3 + x_4y_1 - x_1y_4]
 \end{equation}
 
 \end{document}
