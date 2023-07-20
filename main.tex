@@ -441,4 +441,190 @@ The area of a quadrilateral with vertices \(A(x_1, y_1)\), \(B(x_2, y_2)\), \(C(
 \text{Area} = \frac{1}{2} [x_1y_2 - x_2y_1 + x_2y_3 - x_3y_2 + x_3y_4 - x_4y_3 + x_4y_1 - x_1y_4]
 \end{equation}
 
+\subsection{Slope of a Line}
+
+If 'm' is the slope of the line, then
+
+\begin{equation}
+m = \tan \theta = \frac{y_2 - y_1}{x_2 - x_1}
+\end{equation}
+
+Note: The slope of a line parallel to the x-axis is 0, and the slope of a line parallel to the y-axis is undefined (or infinity).
+
+\subsection{Test for Collinearity of Three Points}
+
+Three points are collinear if:
+
+a) The area of the triangle formed by them is 0.
+
+b) The slopes of the two lines they form are equal, i.e., the slope of AB equals the slope of BC.
+
+\subsection{Equations of Line}
+
+a) Line parallel to the x-axis:
+
+\begin{equation}
+y = b
+\end{equation}
+
+b) Line parallel to the y-axis:
+
+\begin{equation}
+x = a
+\end{equation}
+
+c) Line passing through \((x_1, y_1)\) and having slope 'm':
+
+\begin{equation}
+y - y_1 = m(x - x_1)
+\end{equation}
+
+d) Slope and y-intercept form:
+
+\begin{equation}
+y = mx + c
+\end{equation}
+
+e) Two point form:
+
+\begin{equation}
+y - y_1 = \frac{y_2 - y_1}{x_2 - x_1} (x - x_1)
+\end{equation}
+
+f) Intercept form:
+
+\begin{equation}
+\frac{x}{a} + \frac{y}{b} = 1
+\end{equation}
+
+g) Normal form, where the line has a perpendicular distance from the origin of 'P', and that perpendicular makes an angle \(\theta\) with the x-axis:
+
+\begin{equation}
+x \cos \theta + y \sin \theta = P
+\end{equation}
+
+\subsection{Angle Between Lines}
+
+The angle between two lines is given by
+
+\begin{equation}
+\tan \theta = \left| \frac{m_1 - m_2}{1 + m_1 m_2} \right|
+\end{equation}
+
+Note: If the lines are parallel, \(m_1 = m_2\). If the lines are perpendicular, \(m_1 m_2 = -1\).
+
+Tip: The equation of any line parallel to \(ax + by + c = 0\) can be written as \(ax + by + k = 0\).
+
+\subsection{Condition for a Line to be Equally Inclined from Two Given Lines}
+
+A line is equally inclined from two given lines if
+
+\begin{equation}
+\frac{m - m_1}{1 + m m_1} = -\frac{m - m_2}{1 + m m_2}
+\end{equation}
+
+\subsection{Equation of Angle Bisector of Two Lines}
+
+The equation of the angle bisector of two lines is given by
+
+\begin{equation}
+\frac{a_1 x + b_1 y + c_1}{\sqrt{a_1^2 + b_1^2}} = \pm \frac{a_2 x + b_2 y + c_2}{\sqrt{a_2^2 + b_2^2}}
+\end{equation}
+
+Note: Angle bisectors of two lines are perpendicular. If \(a_1 a_2 + b_1 b_2 > 0\), then the '+' sign gives the obtuse angle bisector, and the '-' sign gives the acute angle bisector. If \(a_1 a_2 + b_1 b_2 < 0\), then vice versa.
+
+\subsection{Perpendicular Distance from a Point to a Line}
+
+The perpendicular distance 'd' from a point \((x_1, y_1)\) to the line \(ax + by + c = 0\) is given by
+
+\begin{equation}
+d = \frac{|ax_1 + by_1 + c|}{\sqrt{a^2 + b^2}}
+\end{equation}
+
+\subsection{Foot of Perpendicular from a Point to a Line}
+
+The coordinates of the foot 'F' of the perpendicular drawn from a point 'P' \((x_1, y_1)\) to the line \(ax + by + c = 0\) can be found using:
+
+Method 1: Calculate the equation of PF and find the point of intersection.
+
+Method 2: Let \(ax + by + c= 0\) be \(a\alpha + by + c\) (\(\alpha\) is the x-coordinate), then the y-coordinate is \(-\frac{a\alpha + c}{b}\). So, \(F = \left(\alpha, -\frac{a\alpha + c}{b}\right)\).
+
+Method 3:
+
+\begin{equation}
+\frac{x - x_1}{a} = \frac{y - y_1}{b} = -\frac{ax_1 + by_1 + c}{a^2 + b^2}
+\end{equation}
+
+where \(F(x, y)\) is the foot of the perpendicular.
+
+\section{Circles}
+
+\subsection{Standard equation of a circle}
+For a circle with center \((\alpha, \beta)\), the equation is:
+\[
+(x-\alpha)^2 + (y-\beta)^2 = r^2
+\]
+where \((x,y)\) is any point on the circle.
+
+\subsection{General equation of a circle}
+The general equation of a circle is:
+\[
+x^2+y^2+2gx+2fy+c = 0
+\]
+Note: the coefficient of \(x^2\) must be equal to the coefficient of \(y^2\), else there is no circle.
+The center is \((-g, -f)\) and the radius is \(\sqrt{g^2+f^2-c}\).
+
+\subsection{Family of circles}
+
+\subsubsection{Circle passing through two points}
+A circle passing through \(A(x_1, y_1)\) and \(B(x_2, y_2)\) can be represented as:
+\[
+(x-x_1)(x-x_2) + (y-y_1)(y-y_2) + \lambda L = 0
+\]
+where \(L\) is the equation of the line joining \(A\) and \(B\), and \(\lambda\) is a parameter.
+
+\subsubsection{Circle touching a line}
+A family of circles touching the line \(ax+by+c = 0\) can be represented as:
+\[
+(x-x_1)^2 + (y-y_1)^2 + \lambda(ax+by+c) = 0
+\]
+
+\subsubsection{Circle passing through the interior of another circle and a line}
+A family of circles passing through the interior of circle \(S = x^2+y^2+2gx+2fy+c\) and line \(L = 0\) can be represented as:
+\[
+S + \lambda L = 0
+\]
+or
+\[
+x^2+y^2+2gx+2fy+c+\lambda(ax+by+c)=0
+\]
+
+\subsubsection{Circle through intersection of two circles}
+A family of circles passing through the intersection of circles \(S_1=x^2+y^2+2g_1x+2f_1y+c_1=0\) and \(S_2=x^2+y^2+2g_2x+2f_2y+c_2=0\) can be represented as:
+\[
+x^2+y^2+2g_1x+2f_1y+c_1+\lambda(x^2+y^2+2g_2x+2f_2y+c_2)=0
+\]
+
+\subsection{Relative position of a point and a circle}
+The relative position of a circle \(S = x^2+y^2+2gx+2fy+c\) and a point \((x_1, y_1)\) can be determined as:
+
+If 
+\[
+S = x_1^2+y_1^2+2gx_1+2fy_1+c = 0
+\]
+then the point is on the circle.
+
+If 
+\[
+S = x_1^2+y_1^2+2gx_1+2fy_1+c > 0
+\]
+then the point is outside the circle.
+
+If 
+\[
+S = x_1^2+y_1^2+2gx_1+2fy_1+c < 0
+\]
+then the point is inside the circle.
+
+
 \end{document}
